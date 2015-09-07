@@ -1,2 +1,6 @@
-# react-router-playground
-just playing with react router
+react-router-playground
+===
+
+### About
+
+playing around with different react router features
