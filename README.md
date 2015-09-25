@@ -1,6 +1,9 @@
 react-router-playground
 ===
 
-### About
+### Get started
 
-playing around with different react router features
+Make sure you replace the `react-router` in package.json
+
+1. `npm install`
+2. `npm start`

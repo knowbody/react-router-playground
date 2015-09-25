@@ -26,14 +26,16 @@
     "eslint-plugin-react": "^2.3.0",
     "express": "^4.13.3",
     "react-transform-catch-errors": "^0.1.1",
-    "react-transform-webpack-hmr": "^0.1.2",
+    "react-transform-hmr": "^1.0.0",
     "redbox-react": "^1.0.1",
     "webpack": "^1.9.6",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.0.0"
-    },
-    "dependencies": {
-      "react": "^0.14.0-beta3",
-      "react-router": "file:../react-router"
-    }
+  },
+  "dependencies": {
+    "history": "^1.9.1",
+    "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
+    "react-router": "file:../react-router"
+  }
 }
