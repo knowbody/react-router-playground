@@ -1,40 +1,24 @@
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, Component, ContextTypes } from 'react';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 import { Router, Route, Link, IndexRoute } from 'react-router';
 
-class Navigation extends Component {
-  render() {
-    return (
-      <div>
-        <ul>
-          <li><Link to='/'>Main</Link></li>
-          <li><Link to='/about'>About</Link></li>
-          <li><Link to='/contact'>Contact</Link></li>
-        </ul>
-      </div>
-    );
-  }
+const Navigation = (props) => {
+  return (
+    <div>
+      <ul>
+        <li><Link to='/' activeClassName='active'>Home</Link></li>
+        <li><Link to='/about' activeClassName='active'>About</Link></li>
+        <li><Link to='/contact' activeClassName='active'>Contact</Link></li>
+      </ul>
+    </div>
+  );
 };
 
-class Contact extends Component {
-  render() {
-    return <div>Contact</div>;
-  }
-}
+export const Contact = (props) => <h3>Contact</h3>;
+export const About = (props) => <h3>About</h3>;
+export const Home = (props) => <h3>Home</h3>;
 
-class About extends Component {
-  render() {
-    return ( <div>About</div> );
-  }
-}
-
-class Home extends Component {
-  render() {
-    return <div>Home</div>;
-  }
-}
-
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <div>
@@ -46,7 +30,7 @@ class App extends Component {
   }
 }
 
-export default class Root extends Component {
+export class Root extends Component {
   render() {
     return (
       <Router history={createBrowserHistory()}>
