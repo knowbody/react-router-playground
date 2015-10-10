@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/knowbody/react-router-playground.svg)](https://travis-ci.org/knowbody/react-router-playground)
+
 react-router-playground
 ===
 
