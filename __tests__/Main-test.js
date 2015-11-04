@@ -1,12 +1,10 @@
-jest.dontMock('../src/Main.js');
+jest.dontMock('../src/Main');
 
-// cannot use es6 modules syntax because
-// jest.dontMock & jest.autoMockOff()
-// do not understand ES6 modules yet
+import React from 'react';
+import { findDOMNode } from 'react-dom';
+import { renderIntoDocument, scryRenderedDOMComponentsWithTag } from 'react-addons-test-utils';
 
-const React = require('react');
-const { Root } = require('../src/Main');
-const { renderIntoDocument, scryRenderedDOMComponentsWithTag } = require('react-addons-test-utils');
+const Root = require('../src/Main');
 
 const rootComponent = renderIntoDocument(<Root />);
 

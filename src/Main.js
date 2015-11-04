@@ -2,7 +2,7 @@ import React, { PropTypes, Component, ContextTypes } from 'react';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 import { Router, Route, Link, IndexRoute } from 'react-router';
 
-const Navigation = (props) => {
+const Navigation = () => {
   return (
     <div>
       <ul>
@@ -14,23 +14,21 @@ const Navigation = (props) => {
   );
 };
 
-export const Contact = (props) => <h3>Contact</h3>;
-export const About = (props) => <h3>About</h3>;
-export const Home = (props) => <h3>Home</h3>;
+const Contact = () => <h3>Contact</h3>;
+const About = () => <h3>About</h3>;
+const Home = () => <h3>Home</h3>;
 
-export class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>App</h1>
-        <Navigation />
-        {this.props.children}
-      </div>
-    );
-  }
+const App = (props) => {
+  return (
+    <div>
+      <h1>App</h1>
+      <Navigation />
+      {props.children}
+    </div>
+  )
 }
 
-export class Root extends Component {
+export default class Root extends Component {
   render() {
     return (
       <Router history={createBrowserHistory()}>
@@ -40,6 +38,6 @@ export class Root extends Component {
           <Route path='contact' component={Contact} />
         </Route>
       </Router>
-    );
+    )
   }
 }
