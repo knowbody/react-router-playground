@@ -15,7 +15,7 @@ describe('App', () => {
 
     it('has three list items', () => {
       const numberOfListItems = listItems.length;
-      expect(numberOfListItems).toEqual(3);
+      expect(numberOfListItems).toEqual(4);
     });
 
     it('has second list item named About', () => {
