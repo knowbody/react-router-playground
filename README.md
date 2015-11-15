@@ -5,5 +5,6 @@ react-router-playground
 
 ### Get started
 
-1. `npm install`
-2. `npm start`
+1. Navigate to a folder (e.g `$ cd simple`)
+2. `npm install`
+3. `npm start`
