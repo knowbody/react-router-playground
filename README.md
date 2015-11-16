@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/knowbody/react-router-playground.svg)](https://travis-ci.org/knowbody/react-router-playground)
-
 react-router-playground
 ===
 
@@ -8,3 +6,6 @@ react-router-playground
 1. Navigate to a folder (e.g `$ cd simple`)
 2. `npm install`
 3. `npm start`
+
+
+*This repo is for my own use to experiment with The Router.*
