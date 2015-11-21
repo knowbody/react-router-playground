@@ -9,3 +9,5 @@ react-router-playground
 
 
 *This repo is for my own use to experiment with The Router.*
+
+Some examples are taken from [rackt](https://github.com/rackt).
